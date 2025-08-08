@@ -87,6 +87,9 @@ p.intro{
     padding:0.125em;
 /*To the left of the page, adapt to screen size*/
 }
+.photo1{
+  width:20em
+}
 .photo2 {
     max-width: 100%;
     height: auto;
@@ -198,4 +201,5 @@ h2.heading{
     display:block;
   }
 }
+
 
