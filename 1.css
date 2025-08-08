@@ -113,6 +113,8 @@ h2.heading {
   margin: 1em auto;
   display:flex;
   justify-content: center;
+  flex-direction:column;
+  
 }
 
 .list-of-students li.five:last-child{
@@ -150,3 +152,4 @@ h2.heading {
     display: block;
   }
 }
+
