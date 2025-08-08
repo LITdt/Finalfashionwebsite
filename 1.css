@@ -118,6 +118,8 @@ h2.heading {
   flex:wrap;
 }
 
+
+
 .list-of-students li.five:last-child{
   width:90%;
 }
@@ -153,9 +155,3 @@ h2.heading {
     display: block;
   }
 }
-
-
-
-
-
-
