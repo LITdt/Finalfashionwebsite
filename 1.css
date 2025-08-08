@@ -75,16 +75,6 @@ h2.heading {
 }
 
 .list-of-students {
- 
-  display: flex; /*Changed from inline block*/
-  flex-wrap: wrap;
-  
-
-}
-
-
-
-.list-of-students {
   margin: 0 auto;
   text-align:center;
   display:flex;
@@ -93,19 +83,23 @@ h2.heading {
   gap:1em;
 }
 
-/*ensure images fit*/
-.list-of-students img {
-  max-height:100%;
-  height:auto;
-  padding:2px;
-  object-fit:cover;
-}
 .list-of-students li {
-  flex: 1 1 calc(48%-1em); /*Shortened form of "flex-grow:1;, flex-shrink:1;, flex-basis:calc(48%-1em);. 
-  */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
   list-style: none;
   width:45%;
 
+}
+
+/*ensure images fit*/
+.list-of-students img {
+  max-height:100%;
+  width:100%;
+  height:auto;
+  padding:2px;
+  object-fit:cover;
+  display:block;
 }
 
 .list-of-students li.five{
@@ -114,11 +108,7 @@ h2.heading {
   display:flex;
   justify-content: center;
   flex-direction:column;
-  position:relative;
-  flex:wrap;
 }
-
-
 
 .list-of-students li.five:last-child{
   width:90%;
