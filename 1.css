@@ -114,7 +114,7 @@ h2.heading {
   display:flex;
   justify-content: center;
   flex-direction:column;
-  
+  position:relative;
 }
 
 .list-of-students li.five:last-child{
@@ -152,4 +152,5 @@ h2.heading {
     display: block;
   }
 }
+
 
