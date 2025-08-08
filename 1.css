@@ -80,7 +80,8 @@ p.intro{
     
 }
 .photo1 {
-    max-width: 100%;
+    max-width: 60%;
+  width:60%;
     height: auto;
     display:block;
     float:left;
@@ -187,9 +188,6 @@ h2.heading{
     width:90%;
     margin:0.5em 0;
   }
-  .list-of-students .photo1{
-    min-width:45%;
-  }
   h1, h2.heading, p.intro{
     text-align:center;
     margin:1em auto;
@@ -202,6 +200,7 @@ h2.heading{
     display:block;
   }
 }
+
 
 
 
