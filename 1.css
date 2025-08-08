@@ -164,11 +164,12 @@ h2.heading{
 
 /*ensure images fit*/
 .list-of-students img{
-  max-width:95%;
+  max-width:85%;
   height:auto;
   display:block;
   margin:auto;
 }
+
 /*Containers on image to make them pairs and single in 3 lines,
  even on different screen sizes*/
 
@@ -186,6 +187,9 @@ h2.heading{
     width:90%;
     margin:0.5em 0;
   }
+  .list-of-students .photo1{
+    min-width:45%;
+  }
   h1, h2.heading, p.intro{
     text-align:center;
     margin:1em auto;
@@ -198,6 +202,7 @@ h2.heading{
     display:block;
   }
 }
+
 
 
 
