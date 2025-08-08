@@ -82,12 +82,7 @@ h2.heading {
 
 }
 
-.list-of-students li {
-  flex: 1 1 calc(48%-1em); /*Shortened form of "flex-grow:1;, flex-shrink:1;, flex-basis:calc(48%-1em);. 
-  */
-  list-style: none;
 
-}
 
 .list-of-students {
   margin: 0 auto;
@@ -100,9 +95,17 @@ h2.heading {
 
 /*ensure images fit*/
 .list-of-students img {
-  max-height:85%;
-  height:300px;
+  max-height:100%;
+  height:auto;
   padding:2px;
+  object-fit:cover;
+}
+.list-of-students li {
+  flex: 1 1 calc(48%-1em); /*Shortened form of "flex-grow:1;, flex-shrink:1;, flex-basis:calc(48%-1em);. 
+  */
+  list-style: none;
+  width:45%;
+
 }
 
 .list-of-students li.five{
