@@ -400,11 +400,11 @@ div.flex-container2{
   }
 
 }
-  @media (max-width: 30em) {
+@media (max-width: 30em) {
   .container span {
-    width: 40vw;
-    height: 8.75em;
-    transform: rotateY(calc(var(--i) * 60deg)) translateZ(8em); /*Changing rotateY and TranslateZ fixed my overlap. */
+    width: 50vw;
+    height: 7em;
+    transform: rotateY(calc(var(--i) * 40deg)) translateZ(18em); /*Changing rotateY and TranslateZ fixed my overlap. */
   }
 
   .container-wrapper{
@@ -413,7 +413,8 @@ div.flex-container2{
     transform:scale(0.9);
   }
   .container span img{
-    height:6.875em;
+    height:6em;
+    max-width:100%;
   }
 
   body {
@@ -425,5 +426,6 @@ div.flex-container2{
     padding: 0.3em 0.5em;
   }
 }
+
 
 
