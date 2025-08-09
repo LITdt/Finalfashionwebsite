@@ -402,7 +402,7 @@ div.flex-container2{
 }
   @media (max-width: 30em) {
   .container span {
-    width: 60vw;
+    width: 40vw;
     height: 8.75em;
     transform: rotateY(calc(var(--i) * 60deg)) translateZ(8em); /*Changing rotateY and TranslateZ fixed my overlap. */
   }
@@ -425,4 +425,5 @@ div.flex-container2{
     padding: 0.3em 0.5em;
   }
 }
+
 
