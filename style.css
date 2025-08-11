@@ -355,10 +355,10 @@ div.flex-container2{
 @media (max-width: 30em) {
   .container-wrapper{
     aspect-ratio:3.5/1;
-    transform:scale(0.5);
+    transform:scale(0.6);
     perspective:150em;
     width:100%;
-    padding-bottom:1em;
+    padding-bottom:1em; /*Stops overlap between intro and carousel. */
   }
   .container span {
     height: 9em;
@@ -378,6 +378,7 @@ div.flex-container2{
     padding: 0.3em 0.5em;
   }
 }
+
 
 
 
