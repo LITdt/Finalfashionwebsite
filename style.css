@@ -277,8 +277,18 @@ div.flex-container2{
     padding-bottom:0.625em;
     margin-top:3em;
     transform: scale(0.7);
-      perspective:200em;
+    perspective:200em;
  }
+  
+  .container span{
+    max-width:25vw;
+    height:11em;
+    transform: rotateY(calc(var(--i) * 40deg)) translateZ(18em); /*changed from 17em, pushes images away from each other a bit.*/
+  }
+    .container span img{
+    max-height:6em; /*smaller height for small screens*/
+    max-width:20vw;
+  }
   h1{
     font-size:1rem;
     padding:0.3em 0.5em;
@@ -323,22 +333,13 @@ div.flex-container2{
     width:100%; /*Match input width*/
     max-width:none;
   }
-
-  .container span{
-    max-width:25vw;
-    height:11.25em;
-    transform: rotateY(calc(var(--i) * 40deg)) translateZ(12em); /*changed from 17em, pushes images away from each other a bit.*/
-  }
   .container{
     width:100%; /*adapts carousel container to full width*/
     height:12em;
     margin-top: 7em; /*increase top margin*/
 
   }
-  .container span img{
-    max-height:6em; /*smaller height for small screens*/
-    max-width:20vw;
-  }
+  
   
   nav ul{
     flex-direction:column;
@@ -352,20 +353,18 @@ div.flex-container2{
 
 }
 @media (max-width: 30em) {
-  .container span {
-    width: 40vw;
-    height: 9em;
-    transform: rotateY(calc(var(--i) * 40deg)) translateZ(12em); /*Changing rotateY and TranslateZ fixed my overlap. */
-  }
-
   .container-wrapper{
-    max-width:100%;
     aspect-ratio:3.5/1;
     transform:scale(0.5);
     perspective:150em;
+    width:100%;
+  }
+  .container span {
+    height: 9em;
+    transform: rotateY(calc(var(--i) * 40deg)) translateZ(12em); /*Changing rotateY and TranslateZ fixed my overlap. */
   }
   .container span img{
-    height:8em;
+    height:5em;
     max-width:100%;
   }
 
@@ -378,6 +377,7 @@ div.flex-container2{
     padding: 0.3em 0.5em;
   }
 }
+
 
 
 
