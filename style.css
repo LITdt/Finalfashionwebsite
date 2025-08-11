@@ -265,15 +265,20 @@ div.flex-container2{
     transform: rotateY(360deg); /*Here I removed the perspective(2000) sections
     from both 0% and 100% - not sure if it worked though.  */
   }
+}
+  
 @media (max-width: 48em){ /*Prepping it for being on a phone. */
   body{
   
     padding-top:6em;
-  }
-  .container-wrapper{
-    transform:scale(0.7);
-    perspective:200em;
-  }
+    .container-wrapper{
+    max-width:100%; /*smaller max size for the mobile*/
+    aspect-ratio: 4/1;
+    padding-bottom:0.625em;
+    margin-top:3em;
+    transform: scale(0.7);
+      perspective:200em;
+ }
   h1{
     font-size:1rem;
     padding:0.3em 0.5em;
@@ -318,13 +323,7 @@ div.flex-container2{
     width:100%; /*Match input width*/
     max-width:none;
   }
-  .container-wrapper{
-    max-width:100%; /*smaller max size for the mobile*/
-    aspect-ratio: 4/1;
-    padding-bottom:0.625em;
-    margin-top:3em;
-    transform: scale(0.85);
- }
+
   .container span{
     max-width:25vw;
     height:11.25em;
@@ -379,6 +378,7 @@ div.flex-container2{
     padding: 0.3em 0.5em;
   }
 }
+
 
 
 
