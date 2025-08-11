@@ -361,7 +361,7 @@ div.flex-container2{
   .container-wrapper{
     max-width:100%;
     aspect-ratio:3.5/1;
-    transform:scale(0.6);
+    transform:scale(0.5);
   }
   .container span img{
     height:8em;
@@ -377,6 +377,7 @@ div.flex-container2{
     padding: 0.3em 0.5em;
   }
 }
+
 
 
 
