@@ -358,6 +358,7 @@ div.flex-container2{
     transform:scale(0.5);
     perspective:150em;
     width:100%;
+    padding-bottom:1em;
   }
   .container span {
     height: 9em;
@@ -377,6 +378,7 @@ div.flex-container2{
     padding: 0.3em 0.5em;
   }
 }
+
 
 
 
